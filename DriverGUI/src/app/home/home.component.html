@@ -1,3 +1,35 @@
-<p>
-  home works!
-</p>
+<!-- <html>
+  <head>
+    <title>Video </title>
+  </head>
+  <body>
+    <h1>Video Streaming Demonstration</h1>
+    <img id="bg" src="http://192.168.137.187:3000/showVideo">
+    <button type="button" (click)="getData($event)">Click me</button>
+  </body>
+</html> -->
+
+<div class="container">
+  <h1>Video Streaming Demonstration</h1>
+<img id="bg" src="http://192.168.137.187:3000/showVideo"><br>
+<button type="button" class="btn btn-primary btn-lg" (click)="getData($event)">Get Data</button>
+<br>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Timestamp</th>
+      <th scope="col">Fatigue</th>
+      <th scope="col">Distract</th>
+      <th scope="col">Season</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let arr of array">
+      <td>{{arr.timeStamp}}</td>
+      <td>{{arr.fatigue}}</td>
+      <td>{{arr.distract}}</td>
+      <td>{{arr.season}}</td>
+    </tr>
+   </tbody>
+</table>
+</div>
