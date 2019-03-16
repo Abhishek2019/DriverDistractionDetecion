@@ -6,12 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-const appRoutes=[
+const appRoutes = [
   {
-    path:'home',
-    component:HomeComponent
+    path: 'home',
+    component: HomeComponent
   }
-]
+];
+
 @NgModule({
   declarations: [
     AppComponent,
